@@ -38,7 +38,7 @@ h1 {
 .card {
     padding: 10px 25px 10px 25px;
     border-radius: 10px;
-    background: #bfc8ff;
+    background: #96a5ff;
     color: #fff;
     display: inline-block;
     box-shadow: 2px 2px 1px 0px #295C7B;
@@ -119,18 +119,18 @@ var hour = zeros(twelveHour(today.getHours()));
 var minutes = zeros(today.getMinutes());
 var seconds = zeros(today.getSeconds());
 if(twelveHour(today.getHours()) >12){
-    seconds+=" pm"
+    seconds+=" am"
 }
 else{
-    seconds+=" am"
+    seconds+=" pm"
 }
 hrs = today.getHours();
 if (hrs < 12)
-        greet = 'Good Morning, Meg ';
+        greet = 'Good Morning, Meg! ';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon, Meg';
+        greet = 'Good Afternoon, Meg!';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening, Meg';
+        greet = 'Good Evening, Meg!';
 // console.log(today.toLocaleTimeString());
 document.getElementById('greet').innerHTML = greet;
 document.getElementById('hour').innerHTML = hour;
